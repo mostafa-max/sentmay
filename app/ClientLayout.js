@@ -43,7 +43,7 @@ export default function ClientLayout({ children }) {
           initial={{ y: 10 }}
           animate={{ y: 0 }}
           transition={{ duration: 0.5 }}
-          className="min-h-screen pt-[56px]"
+          className="min-h-screen pt-[72px]"
         >
           {children}
         </motion.main>

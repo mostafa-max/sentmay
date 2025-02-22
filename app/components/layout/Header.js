@@ -78,7 +78,7 @@ export const Header = () => {
   animate={{ opacity: isMobileMenuOpen ? 1 : 0, x: isMobileMenuOpen ? 0 : -100 }}
   exit={{ opacity: 0, x: -100 }}
   transition={{ duration: 0.3, ease: "easeInOut" }}
-  className={`lg:hidden fixed top-[56px] left-0 w-full bg-base-100 shadow-lg p-4 ${isMobileMenuOpen ? 'block' : 'hidden'}`}
+  className={`lg:hidden fixed top-[72px] left-0 w-full bg-base-100 shadow-lg p-4 ${isMobileMenuOpen ? 'block' : 'hidden'}`}
 >
   <motion.ul
     className="menu w-full space-y-2"
