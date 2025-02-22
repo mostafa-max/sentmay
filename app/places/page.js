@@ -1,4 +1,3 @@
-export const dynamic = "force-dynamic"
 import { Suspense } from "react";
 import PlacesPage from "./PlacesPage"; // Import the Client Component
 import LoadingSpinner from "../components/LoadingSpinner";
