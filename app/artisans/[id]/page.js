@@ -3,7 +3,6 @@
 import { useMemo } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import useGetItem from '@/app/hooks/useGetItem';
-import { PageBackground } from '@/app/components/layout/PageBackground';
 import BackButton from '@/app/components/ButtonBack';
 import { ProfileImage } from './_components/ProfileImage';
 import { ArtisanDetails } from './_components/ArtisanDetails';
@@ -35,7 +34,7 @@ const ArtisanPage = () => {
         <BackButton router={router} />
         
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <ProfileImage image={artisan.image} name={artisan.name} />
+          <ProfileImage image={artisan.picture} name={artisan.name} />
           
           <div className="space-y-8">
             <ArtisanDetails artisan={artisan} />
