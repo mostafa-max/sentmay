@@ -1,4 +1,4 @@
-
+export const dynamic = "force-dynamic"
 import { Suspense } from "react";
 import ArtisansPage from "./ArtisansPage"; // Import the Client Component
 import LoadingSpinner from "../components/LoadingSpinner";
