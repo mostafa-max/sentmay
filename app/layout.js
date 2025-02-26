@@ -12,7 +12,7 @@ const zain = Zain({
 export const metadata = {
   title: 'سنتماي - الموقع الرسمي',
   description: "سنتماي - الموقع الرسمي لقرية سنتماي التابعة لمركز ميت غمر بمحافظة الدقهلية. اكتشف تاريخ القرية،الصور، والخدمات المحلية لسكان سنتماي.",
-  icons: { icon: "/icon.ico" },
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({ children }) {
