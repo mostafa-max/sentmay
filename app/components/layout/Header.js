@@ -42,8 +42,8 @@ export const Header = () => {
       whileHover={{ scale: 1.1 }} 
       className="flex items-center gap-2"
     >
-      <Link href="/" className='px-4 h-14 flex items-center relative '>
-        <Image src={`/${theme}Logo.png`} height={80}  width={80} alt='logo' priority/>
+      <Link href="/" aria-label='سنتماي - الموقع الرسمي' className='px-4 h-14 flex items-center relative '>
+        <Image src={`/${theme}Logo.png`} height={80}  width={80} alt='سنتماي - الموقع الرسمي' priority/>
       </Link>
     </motion.div>
         </div>

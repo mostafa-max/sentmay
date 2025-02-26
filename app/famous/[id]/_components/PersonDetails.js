@@ -14,8 +14,8 @@ function PersonDetails({person}) {
     const calculateLifespan = () => {
         if (!person?.birth_date || !person?.die_date) return null;
         const birth = new Date(person.birth_date);
-        const death = new Date(person.die_date);
-        const age = death.getFullYear() - birth.getFullYear();
+        const death = person.die_date?new Date(person.die_date):0
+        const age = death!==0? death.getFullYear() - birth.getFullYear():new Date().getFullYear() - birth.getFullYear()
         return `${age} سنة`;
       };
   return (
@@ -26,11 +26,11 @@ function PersonDetails({person}) {
                   value={formatDate(person.birth_date)}
                 />
                 
-                <DetailItem 
+               {person.die_date&& <DetailItem 
                   icon={<FiCrosshair />}
                   label="تاريخ الوفاة"
                   value={formatDate(person.die_date)}
-                />
+                />}
                 
                 <DetailItem 
                   icon={<FiStar />}
